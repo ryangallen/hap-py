@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post">
+	<h2>New Pin</h2>
+	<div class="error">{{error}}</div>
+	<label for="">
+		<h4>Title</h3>
+		<input type="text" name="title" value="{{title}}"></label>
+
+	<label for="">
+		<h4>Date</h3>
+		<div class="input-append date datepicker" data-date="01-14-2012" data-date-format="mm-dd-yyyy">
+		    <input name="date" size="16" type="text" value="01-14-2012" readonly><span class="add-on"><i class="icon-th"></i></span>
+		</div>
+	</label>
+
+	<script src="/static/js/bootstrap-datepicker.js"></script>
+	<script src="/static/js/new-pin.js"></script>
+
+	<label for="">
+		<h4>Location</h3>
+		<input type="text" name="location" value="{{location}}"></label>
+
+	<label for="">
+		<h4>Description</h3>
+		<textarea name="description" id="description">{{description}}</textarea>
+	</label>
+	<input type="submit" class="btn btn-warning">
+</form>
+{% endblock %}

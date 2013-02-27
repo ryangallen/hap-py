@@ -1,0 +1,106 @@
+body{
+    font-size:1em;
+    background: #222;
+}
+
+#banner{
+	background:#FFCC00;
+	position: absolute;
+	width: 100%;
+	height:45px;
+	padding: 10px;
+	top:0;
+	z-index: 1;
+}
+
+#logo{
+    float: left;
+    margin:0 0 5px;
+	font-family:lobster, serif;
+	text-shadow:0 2px 5px #C7980A;
+}
+
+#logo a{
+    color:#FDFDFD;
+}
+
+#nav{
+	list-style-type:none;
+	float: right;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+#nav li{
+	display:inline-block;
+	float:right;
+	margin: 8px 10px 8px 0;
+}
+
+#content{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:65px;
+	color:#FFF;
+}
+
+#map_canvas {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top: 0;
+	right: 0;
+}
+
+input[type="text"], input[type="textarea"], input[type="password"]{
+	width: 100%;
+}
+
+.submit{
+	text-align: right;
+	margin:18px -12px 0 18px;
+}
+
+.error {
+	line-height: 1.5em;
+	border-radius: 4px;
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
+
+form{
+	margin:30px auto;
+	width:300px;
+}
+
+#queue{
+	z-index: 5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-left: 1px solid #FFF;
+	
+}
+
+#permalink{
+	width: 320px;
+	margin: 3em auto;
+}
+
+.center{
+	text-align: center;
+}
+
+.pin{
+	width: 300px;
+	border-bottom: 1px solid #FFF;
+	background: rgba(0,0,0,.9);
+	margin: 0;
+	padding: 10px;
+}
+
+.pin:last-child{
+	border-bottom: none;
+}

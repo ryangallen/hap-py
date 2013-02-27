@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+	{% block content %}
+
+	<div id="map_canvas"></div>
+	<div id="queue">
+	  {% for h in happinings %}
+	    {{ h.render() | safe }}
+	  {% endfor %}
+	</div>
+{% endblock %}

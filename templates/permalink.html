@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="permalink">
+	<h1 class="pin center">pinned!</h1>
+	{{happining.render() | safe}}
+	<p class="pin center">
+		<a href="/" class="btn btn-warning center">Back to the Board</a>
+	</p>
+</div>
+{% endblock %}
